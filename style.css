@@ -17,18 +17,80 @@ body {
     z-index: -2;
 }
 
-.header {
-    background-color: rgba(134, 89, 89, 0.1);
-    padding: 5px 100px 5px 100px;
-}
+/* headers (top/bottom) css */
+
 .topHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    background-color: rgba(134, 89, 89, 0.1);
+    padding: 0px 12px 0px 12px
 }
 
 a {
     text-decoration: none;
-
 }
+
+.bottomHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: hard-light;
+    border-radius: 20px;
+    margin: 9em auto 9em auto;
+    /*padding: 50px 100px 50px 0px;*/
+    color: white;
+    gap: 30px;
+    width: 85%;
+    min-width: 500px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 5em 3em 5em;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+#headerImage {
+    width: 200px;
+    height: auto;
+}
+
+/* signUp button CSS */
+
+#signUp {
+    background-color: rgb(59, 59, 237, 0.6);
+    border-radius: 50px;
+    width: 300px;
+    height: 100px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signUp:hover {
+    box-shadow: 0px 0px 20px  rgba(255, 255, 255, 0.9);
+    background-color: rgb(59, 59, 237, 0.9);
+    transition: top ease 0.3s;
+    /*top: -3px;*/
+    transform: translateY(-4px);
+
+    cursor: pointer;
+}
+
+#signUp:active {
+    transform: translateY(1px);
+    background-color: rgb(59, 59, 237, 0.9);
+    box-shadow: inset 0px 0px 30px 2px  rgba(0, 0, 0, 0.6);
+}
+
+
+
